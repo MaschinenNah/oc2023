@@ -68,3 +68,5 @@ print(dreiMalDreiNullen.dtype)
 # I)
 zufall = np.random.randint(0, 10, (3, 3), np.int8)
 print(zufall)
+
+# test!
