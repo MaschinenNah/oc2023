@@ -65,8 +65,20 @@ print(dreiMalDreiNullen)
 print(dreiMalDreiNullen.dtype)
 #=> int8
 
-# I)
+# I) Ein Array kann beliebig viele Dimensionen haben.
+# Es müssen auch nicht alle Dimensionen die gleiche Ausdehnung haben:
+raum = np.zeros((2, 3, 4), np.int8)
+print(raum)
+'''
+[[[0 0 0 0]
+  [0 0 0 0]
+  [0 0 0 0]]
+
+ [[0 0 0 0]
+  [0 0 0 0]
+  [0 0 0 0]]]
+'''
+
+# J) Hier füllen wir ein Array mit Zufallszahlen:
 zufall = np.random.randint(0, 10, (3, 3), np.int8)
 print(zufall)
-
-# test!

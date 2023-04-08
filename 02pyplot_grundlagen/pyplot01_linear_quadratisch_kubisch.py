@@ -12,8 +12,20 @@ ganze_zahlen  = [x for x in range(n)]
 quadratzahlen = [x*x for x in range(n)]
 kubikzahlen   = [x**3 for x in range(n)]
 
-# Darstellung der Zahlenfolgen mit PyPlot:
-plt.plot(ganze_zahlen, 'x')
-plt.plot(quadratzahlen, '+')
-plt.plot(kubikzahlen, '*')
+# Darstellung der Zahlenfolgen mit PyPlot als Kurve:
+plt.plot(ganze_zahlen)
+plt.plot(quadratzahlen)
+plt.plot(kubikzahlen)
+plt.show()
+
+# ... Als Punkte:
+plt.plot(ganze_zahlen, '+')
+plt.plot(quadratzahlen, '*')
+plt.plot(kubikzahlen, 'x')
+plt.show()
+
+# ... In ausgewählten Farben
+plt.plot(ganze_zahlen, color="purple")
+plt.plot(quadratzahlen, color="red")
+plt.plot(kubikzahlen, color="lime")
 plt.show()
