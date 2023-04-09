@@ -13,6 +13,6 @@ for x in range(1000):
         matrix[x][y] = math.sin(x_norm) + math.cos(y_norm)
 
 
-#plt.contour(matrix, 20)
-plt.contourf(matrix, 20)
+plt.contour(matrix, 20)
+plt.imshow(matrix)
 plt.show()

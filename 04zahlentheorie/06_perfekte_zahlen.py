@@ -10,6 +10,6 @@ def ist_perfekte_zahl(zahl):
     teiler = echte_teiler(zahl)
     return sum(teiler) == zahl
 
-for zahl in range(34000000):
+for zahl in range(35000000):
     if (ist_perfekte_zahl(zahl)):
         print(zahl)

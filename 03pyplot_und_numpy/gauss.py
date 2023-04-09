@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
-seitenlaenge = 500
-wiederholungen = 5000
-abweichung = 50
+seitenlaenge = 100
+wiederholungen = 10000
+abweichung = 10
 
 bild = np.zeros((seitenlaenge, seitenlaenge))
 

@@ -4,10 +4,15 @@ from matplotlib import pyplot as plt
 
 fig, ax = plt.subplots(figsize=(8, 8))
 
-n = 10
+n = 500
 
-sinus = [math.sin(x) for x in np.linspace(0, 2*math.pi, n)]
+# Kreis:
+sinus =   [math.sin(x) for x in np.linspace(0, 2*math.pi, n)]
 cosinus = [math.cos(x) for x in np.linspace(0, 2*math.pi, n)]
 
-plt.plot(sinus, cosinus)
+# Spirale:
+# sinus =   [x * math.sin(x) for x in np.linspace(0, 8 * 2*math.pi, n)]
+# cosinus = [x * math.cos(x) for x in np.linspace(0, 8 * 2*math.pi, n)]
+
+plt.plot(sinus, cosinus, linewidth=10, color='r')
 plt.show()

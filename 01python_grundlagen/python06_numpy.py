@@ -82,3 +82,8 @@ print(raum)
 # J) Hier füllen wir ein Array mit Zufallszahlen:
 zufall = np.random.randint(0, 10, (3, 3), np.int8)
 print(zufall)
+'''
+[[9 2 6]
+ [9 1 4]
+ [7 4 6]]
+'''

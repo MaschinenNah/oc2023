@@ -4,7 +4,6 @@ def alle_teiler(zahl):
     for teiler in range(1, max_teiler):
         if (zahl % teiler == 0):
             resultat.append(teiler)
-    #resultat.append(zahl)
     return resultat
 
 
