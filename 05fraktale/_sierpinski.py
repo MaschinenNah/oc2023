@@ -1,4 +1,5 @@
-#05_spierpinski.py
+# Bearbeitung eines Beispielprogramms aus
+# https://www.rheinwerk-verlag.de/mathematische-algorithmen-mit-python/
 from turtle import  *
 
 def sierpinski(a,ai):

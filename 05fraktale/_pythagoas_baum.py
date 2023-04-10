@@ -1,4 +1,6 @@
-#07_pythagoras_baum.py
+# Bearbeitung eines Beispielprogramms aus
+# https://www.rheinwerk-verlag.de/mathematische-algorithmen-mit-python/
+
 import math as math
 from turtle import *
 #Quadrat zeichnen

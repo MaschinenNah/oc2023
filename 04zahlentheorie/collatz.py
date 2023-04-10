@@ -12,5 +12,3 @@ def collatz_naiv(zahl):
             zahl = zahl * 3 + 1
             
 print([collatz_naiv(zahl) for zahl in range(1, 1000)])
-
-

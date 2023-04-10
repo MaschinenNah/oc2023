@@ -1,4 +1,6 @@
-#02_koch_kurve.py
+# Beispielprogramms aus
+# https://www.rheinwerk-verlag.de/mathematische-algorithmen-mit-python/
+
 from turtle import  *
 a=600
 penup()

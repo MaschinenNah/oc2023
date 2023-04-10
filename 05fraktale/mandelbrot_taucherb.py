@@ -10,20 +10,20 @@ fig, ax = plt.subplots(figsize=(8, 8))
 n_pixel = 800
 
 # Durchmesser des untersuchten Ausschnittes
-d = np.array(5, np.longdouble)
+d = np.array(3, np.longdouble)
 
 # Linke obere Ecke des dargestellten Ausschnittes
-x_min = 0-d/2
+x_min = -0.5-d/2
 y_min = 0-d/2
 
 # Minimale Anzahl an Iterationen:
-min_iterationen = 150
+min_iterationen = 100
 
 def ausschnitt_berechnen():
     resultat = np.zeros((n_pixel, n_pixel))
     n_iterationen = int(min_iterationen - (math.log(d, 10)*10))
     print("Anzahl Iterationen", n_iterationen)
-    n_snapshots = 8
+    n_snapshots = 20
     iterationen_pro_snapshot = int(n_iterationen / n_snapshots)
     
     schrittweite = d / n_pixel;

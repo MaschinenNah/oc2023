@@ -4,16 +4,16 @@ import math
 
 np.seterr(all="ignore")
 
-fig, ax = plt.subplots(figsize=(12, 12))
+fig, ax = plt.subplots(figsize=(8, 8))
 
 # Aufloeseung des dargestellten Ausschnittes
 n_pixel = 800
 
 # Durchmesser des untersuchten Ausschnittes
-d = np.array(5, np.longdouble)
+d = np.array(3, np.longdouble)
 
 # Linke obere Ecke des dargestellten Ausschnittes
-x_min = 0-d/2
+x_min = -0.5-d/2
 y_min = 0-d/2
 
 # Minimale Anzahl an Iterationen:
@@ -50,6 +50,7 @@ def onclick(event):
     global d, x_min, y_min
     x_pixel, y_pixel = event.xdata, event.ydata
     x_koord, y_koord = pixel_zu_koordinate(x_pixel, y_pixel)
+    print("Neues Zentrum:", x_koord, y_koord)
     d = d / 5
     x_min = x_koord - d/2
     y_min = y_koord - d/2
